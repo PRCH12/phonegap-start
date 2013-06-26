@@ -1,1 +1,2 @@
 <plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
+<plugin name="Notification" value="org.apache.cordova.Notification"/>
