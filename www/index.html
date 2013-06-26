@@ -17,9 +17,13 @@
     document.addEventListener("deviceready", onDeviceReady, false);
 
     // Cordova is ready
+    
+function onDeviceReady() {
+  
+    navigator.geolocation.getCurrentPosition(myPositionSuccess, myPositionError, {maximumAge: 300000, timeout:10000, enableHighAccuracy : true});
+    };
     //
-    function onDeviceReady() {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
     }
 
     // onSuccess Geolocation
